@@ -40,32 +40,17 @@ class Store:
     mail = ""
 
 class FirebaseConfig():
-    def DatabaseConfig(self):
-        jsonConfig = {
-                        "apiKey": "AIzaSyDBIHGCeizlScyzzZ2ITxzKzJwcib3gISg",
-                        "authDomain": "password-chronicle.firebaseapp.com",
-                        "databaseURL": "https://password-chronicle-default-rtdb.firebaseio.com",
-                        "projectId": "password-chronicle",
-                        "storageBucket": "password-chronicle.appspot.com",
-                        "messagingSenderId": "850518406109",
-                        "appId": "1:850518406109:web:2cb6f56ddc8a0c10863c34",
-                        "measurementId": "G-STDX0ZW81B"
-                    }
+    self.config = { "FIREBASE_CONFIG_OBJECT" } 
+    
+   '''I know, I am adding these two un-necessary functions, but just for the sake 
+   of making it more understandable to someone who never worked with pyrebase'''
 
+    def DatabaseConfig(self):
+        jsonConfig = self.config
         return jsonConfig
 
     def AuthConfig(self):
-        jsonConfig = {
-                      "apiKey": "AIzaSyDBIHGCeizlScyzzZ2ITxzKzJwcib3gISg",
-                      "authDomain": "password-chronicle.firebaseapp.com",
-                      "databaseURL": "https://password-chronicle.firebaseapp.com",
-                      "projectId": "password-chronicle",
-                      "storageBucket": "password-chronicle.appspot.com",
-                      "messagingSenderId": "850518406109",
-                      "appId": "1:850518406109:web:2cb6f56ddc8a0c10863c34",
-                      "measurementId": "G-STDX0ZW81B"
-                    }
-
+        jsonConfig = self.config
         return jsonConfig
 
 
